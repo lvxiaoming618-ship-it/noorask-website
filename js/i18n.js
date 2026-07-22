@@ -180,6 +180,7 @@
       'trans.commit.title': 'আমাদের অঙ্গীকার',
       'trans.commit.p1': 'নূরআস্ক একটি জনকল্যাণমূলক প্ল্যাটফর্ম। আমরা বিশ্বাস করি, বিশ্বাস গড়ে ওঠে স্বচ্ছতা থেকে। আমরা অংশীদারি মসজিদগুলোকে অ্যাপের জন্য দান সংগ্রহে উৎসাহিত করি — আপনার সম্প্রদায়ের প্রতিটি অবদান সম্পূর্ণ স্বচ্ছতায় ট্র্যাক ও প্রতিবেদন করা হয়।',
       'trans.commit.p2': 'যেসব মসজিদ অংশ নিতে চান তারা তাদের মুসল্লিদের নূরআস্কে দান করতে উৎসাহিত করতে পারেন। প্রতিটি টাকা হিসাবভুক্ত থাকে, এবং তহবিল সরাসরি আপনার সম্প্রদায়ের সেবাকারী প্ল্যাটফর্ম গড়তে ও রক্ষণাবেক্ষণে ব্যয় হয়। কোনো প্রশ্ন থাকলে যোগাযোগ করুন।',
+      'trans.commit.optional': 'দান সম্পূর্ণ ঐচ্ছিক — কোনো চাপ নেই।',
 
       'trans.plan.title': 'অংশীদারি মসজিদ কীভাবে সাহায্য করতে পারে',
       'trans.plan.subtitle': 'আপনার মসজিদ সম্প্রদায়কে দানে উৎসাহিত করতে পারে — প্রতিটি অবদান সম্পূর্ণ স্বচ্ছ',
@@ -441,6 +442,7 @@
       'trans.commit.title': 'Our Commitment',
       'trans.commit.p1': 'NoorAsk is a public-interest platform. We believe trust is built on transparency. We invite partner mosques to help raise donations for the app — every contribution from your community is tracked and reported with full transparency.',
       'trans.commit.p2': 'Mosques that choose to participate can encourage their congregation to donate to NoorAsk. Every taka is accounted for, and funds go directly toward building and maintaining the platform that serves your community. If you have questions, please contact us.',
+      'trans.commit.optional': 'Donations entirely voluntary — no pressure.',
 
       'trans.plan.title': 'How Partner Mosques Can Help',
       'trans.plan.subtitle': 'Your mosque can encourage the community to donate — every contribution is fully transparent',
