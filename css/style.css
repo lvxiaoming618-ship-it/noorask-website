@@ -1012,6 +1012,12 @@ tbody tr:hover {
 html[lang="en"] .logo .txt-bn { display: none; }
 html[lang="en"] .logo .txt-en { display: inline; }
 
+/* Footer Brand Language Toggle */
+.footer-brand .txt-bn { display: inline; }
+.footer-brand .txt-en { display: none; }
+html[lang="en"] .footer-brand .txt-bn { display: none; }
+html[lang="en"] .footer-brand .txt-en { display: inline; }
+
 /* Co-Creation Highlight Box */
 .highlight-box {
   background: linear-gradient(135deg, rgba(13,92,59,0.06) 0%, rgba(201,168,76,0.08) 100%);
