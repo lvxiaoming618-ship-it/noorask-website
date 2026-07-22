@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NoorAsk financial transparency. See how donations are collected and used.">
-  <title>Transparency - NoorAsk</title>
+  <meta name="description" content="নূরআস্ক স্বচ্ছতা — অংশীদারি মসজিদের দান কীভাবে সংগৃহীত, ট্র্যাক ও ব্যবহৃত হয় তা সম্পূর্ণ জবাবদিহিতায় দেখুন।">
+  <title>স্বচ্ছতা</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html" class="active">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li class="active"><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,8 @@
   <!-- Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>Transparency</h1>
-      <p class="tagline">NoorAsk pledges complete transparency in all fundraising and expenditure</p>
+      <h1 data-i18n="trans.title">স্বচ্ছতা</h1>
+      <p class="tagline" data-i18n="trans.hero.tagline">নূরআস্ক সকল তহবিল সংগ্রহ ও ব্যয়ে সম্পূর্ণ স্বচ্ছতার অঙ্গীকার করে</p>
     </div>
   </section>
 
@@ -43,79 +52,26 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="content-block">
-        <h2 class="section-title" style="text-align: left;">Our Commitment</h2>
-        <p>NoorAsk is a <strong>public-interest platform</strong>. We believe that trust is built on transparency. Every taka donated, every expense incurred, and every decision made is open to scrutiny by our donors, partners, and the community we serve.</p>
-        <p>This page is updated regularly to reflect the latest financial status of our mosque partnership fundraising. If you have any questions, please <a href="./contact.html">contact us</a>.</p>
+        <h2 class="section-title" style="text-align: left;" data-i18n="trans.commit.title">আমাদের অঙ্গীকার</h2>
+        <p data-i18n="trans.commit.p1">নূরআস্ক একটি জনকল্যাণমূলক প্ল্যাটফর্ম। আমরা বিশ্বাস করি, বিশ্বাস গড়ে ওঠে স্বচ্ছতা থেকে। আমরা অংশীদারি মসজিদগুলোকে অ্যাপের জন্য দান সংগ্রহে উৎসাহিত করি — আপনার সম্প্রদায়ের প্রতিটি অবদান সম্পূর্ণ স্বচ্ছতায় ট্র্যাক ও প্রতিবেদন করা হয়।</p>
+        <p data-i18n="trans.commit.p2">যেসব মসজিদ অংশ নিতে চান তারা তাদের মুসল্লিদের নূরআস্কে দান করতে উৎসাহিত করতে পারেন। প্রতিটি টাকা হিসাবভুক্ত থাকে, এবং তহবিল সরাসরি আপনার সম্প্রদায়ের সেবাকারী প্ল্যাটফর্ম গড়তে ও রক্ষণাবেক্ষণে ব্যয় হয়। কোনো প্রশ্ন থাকলে যোগাযোগ করুন।</p>
+        <div class="highlight-box">
+          <i class="fas fa-heart" style="color: var(--accent-gold); margin-bottom: 0.5rem; font-size: 1.3rem;"></i>
+          <p style="font-weight: 600; color: var(--primary-green); margin: 0;">দান সম্পূর্ণ ঐচ্ছিক — কোনো চাপ নেই।</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Fundraising Table -->
+  <!-- Fundraising Plan -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Fundraising Progress</h2>
-        <p class="section-subtitle">Live updates on mosque partnership contributions</p>
+        <h2 class="section-title" data-i18n="trans.plan.title">অংশীদারি মসজিদ কীভাবে সাহায্য করতে পারে</h2>
+        <p class="section-subtitle" data-i18n="trans.plan.subtitle">আপনার মসজিদ সম্প্রদায়কে দানে উৎসাহিত করতে পারে — প্রতিটি অবদান সম্পূর্ণ স্বচ্ছ</p>
       </div>
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Mosque Name</th>
-              <th>Target (BDT)</th>
-              <th>Raised (BDT)</th>
-              <th>Progress</th>
-              <th>Last Donation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Dhaka Central Mosque</strong></td>
-              <td>50,000</td>
-              <td>42,500</td>
-              <td>
-                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
-              </td>
-              <td>Jul 20, 2026</td>
-            </tr>
-            <tr>
-              <td><strong>Chittagong Community Center</strong></td>
-              <td>40,000</td>
-              <td>28,000</td>
-              <td>
-                <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
-              </td>
-              <td>Jul 18, 2026</td>
-            </tr>
-            <tr>
-              <td><strong>Sylhet Grand Mosque</strong></td>
-              <td>35,000</td>
-              <td>35,000</td>
-              <td>
-                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
-              </td>
-              <td>Jul 15, 2026</td>
-            </tr>
-            <tr>
-              <td><strong>Rajshahi Islamic Center</strong></td>
-              <td>30,000</td>
-              <td>12,000</td>
-              <td>
-                <div class="progress-bar"><div class="progress-fill" style="width: 40%;"></div></div>
-              </td>
-              <td>Jul 10, 2026</td>
-            </tr>
-            <tr>
-              <td><strong>Khulna Masjid Al-Noor</strong></td>
-              <td>25,000</td>
-              <td>18,750</td>
-              <td>
-                <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
-              </td>
-              <td>Jul 19, 2026</td>
-            </tr>
-          </tbody>
-        </table>
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <p style="font-size: 1.2rem; color: var(--text-medium);"><span data-i18n="trans.plan.target">পর্যায় ১ লক্ষ্য:</span> <strong style="font-size: 1.5rem; color: var(--primary-green);" data-i18n="trans.plan.targetDesc">নূরআস্ক অ্যান্ড্রয়েড অ্যাপ গড়ে তোলা ও প্রথম অংশীদারি মসজিদের সাথে চালু করা</strong></p>
       </div>
     </div>
   </section>
@@ -124,37 +80,37 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">How Funds Are Used</h2>
-        <p class="section-subtitle">Every donation is allocated responsibly across four key areas</p>
+        <h2 class="section-title" data-i18n="trans.alloc.title">তহবিল কীভাবে ব্যবহৃত হয়</h2>
+        <p class="section-subtitle" data-i18n="trans.alloc.subtitle">প্রতিটি দান চারটি মূল ক্ষেত্রে দায়িত্বশীলভাবে বণ্টিত হয়</p>
       </div>
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-laptop-code"></i>
           </div>
-          <h3>Product Development <span style="color: var(--accent-gold);">40%</span></h3>
-          <p>Building and maintaining the NoorAsk platform, including mobile apps, web infrastructure, and AI systems.</p>
+          <h3 data-i18n="trans.alloc.dev.title">প্রোডাক্ট ডেভেলপমেন্ট</h3>
+          <p data-i18n="trans.alloc.dev.desc">নূরআস্ক প্ল্যাটফর্ম গড়া ও রক্ষণাবেক্ষণ — মোবাইল অ্যাপ, ওয়েব অবকাঠামো, AI সিস্টেম।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-book-open"></i>
           </div>
-          <h3>Content Production <span style="color: var(--accent-gold);">30%</span></h3>
-          <p>Creating verified Islamic educational content, translating materials, and producing multimedia resources.</p>
+          <h3 data-i18n="trans.alloc.content.title">বিষয়বস্তু প্রস্তুতি</h3>
+          <p data-i18n="trans.alloc.content.desc">ইসলামিক শিক্ষামূলক বিষয়বস্তু তৈরি, অনুবাদ ও মাল্টিমিডিয়া সম্পদ উৎপাদন — ইমামদের সাথে একত্রে।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-bullhorn"></i>
           </div>
-          <h3>Marketing <span style="color: var(--accent-gold);">20%</span></h3>
-          <p>Community outreach, representative support, mosque onboarding, and awareness campaigns.</p>
+          <h3 data-i18n="trans.alloc.marketing.title">প্রচার</h3>
+          <p data-i18n="trans.alloc.marketing.desc">সম্প্রদায় সংযোগ, প্রতিনিধি সহায়তা, মসজিদ অনবোর্ডিং ও সচেতনতা ক্যাম্পেইন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-cogs"></i>
           </div>
-          <h3>Operations <span style="color: var(--accent-gold);">10%</span></h3>
-          <p>Administrative costs, legal compliance, accounting, and platform security.</p>
+          <h3 data-i18n="trans.alloc.ops.title">পরিচালনা</h3>
+          <p data-i18n="trans.alloc.ops.desc">প্রশাসনিক ব্যয়, আইনি সম্মতি, হিসাব রক্ষণ ও প্ল্যাটফর্ম নিরাপত্তা।</p>
         </div>
       </div>
     </div>
@@ -166,7 +122,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -174,32 +130,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

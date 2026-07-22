@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NoorAsk - Mosque-Driven Muslim Life Guidance Platform. Connecting communities through technology.">
-  <title>NoorAsk - Mosque-Driven Muslim Life Guidance</title>
+  <meta name="description" content="নূরআস্ক — একটি মোবাইল অ্যাপ যা মসজিদ ও মুসল্লিদের মাঝে সেতুবন্ধন তৈরি করে। আপনার মসজিদের সাথে অংশীদারি করে মুসল্লিদের নির্ভয়ে প্রশ্ন জিজ্ঞাসার সুযোগ দিন।">
+  <title>নূরআস্ক — মসজিদ ও মুসল্লিদের মাঝে সেতুবন্ধন</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html" class="active">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li class="active"><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,11 +43,14 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>NoorAsk</h1>
-      <p class="tagline">Mosque-Driven Muslim Life Guidance Platform</p>
+      <div class="free-badge"><i class="fas fa-gift"></i><span data-i18n="badge.free">১০০% ফ্রি</span></div>
+      <h1 data-i18n="home.hero.title">নূরআস্ক</h1>
+      <p class="tagline" data-i18n="home.hero.tagline">যে প্রশ্নগুলো মুখে বলা কঠিন — এখন নির্ভয়ে জিজ্ঞাসা করুন</p>
+      <p style="font-size: 1.05rem; color: var(--accent-gold); font-weight: 500; margin-bottom: 1.5rem;" data-i18n="home.hero.sub">নামে বা নাম ছাড়া — আপনার মসজিদের ইমাম সরাসরি উত্তর দেন। মসজিদ ও মুসল্লিদের মাঝে এক নতুন সেতুবন্ধন, যা আল্লাহর সাহায্যে গভীর থেকে গভীরতর পথনির্দেশনা এনে দেয়।</p>
+      <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; max-width: 620px; margin-left: auto; margin-right: auto;" data-i18n="home.hero.desc">জীবনের গভীরতম প্রশ্নগুলো প্রায়ই সবচেয়ে কঠিন হয়ে দাঁড়ায় মুখে বলার মতো। নূরআস্ক এমন এক নিরাপদ স্থান তৈরি করে — আপনার নাম বলুন বা নাম গোপন রাখুন, আপনার ইমামের পথনির্দেশনা আপনার কাছে পৌঁছে যাবে। আমরা মসজিদের সাথে একত্রে এই ঈমান ও সেবার নেটওয়ার্ক গড়ে তুলছি।</p>
       <div class="hero-buttons">
-        <a href="./partnership.html" class="btn btn-primary">Apply for Partnership</a>
-        <a href="./about.html" class="btn btn-outline">Learn More</a>
+        <a href="./partnership.html" class="btn btn-primary" data-i18n="btn.partner">মসজিদের সাথে অংশীদারি করুন</a>
+        <a href="./about.html" class="btn btn-outline" data-i18n="btn.learnMore">আরও জানুন</a>
       </div>
     </div>
   </section>
@@ -47,38 +59,52 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Core Highlights</h2>
-        <p class="section-subtitle">Empowering mosques to serve their communities through modern technology</p>
+        <h2 class="section-title" data-i18n="home.howitworks.title">নূরআস্ক অ্যাপ কীভাবে কাজ করে</h2>
+        <p class="section-subtitle" data-i18n="home.howitworks.subtitle">ইমামগণ পথনির্দেশনা দেন, অ্যাপটি সেই পথনির্দেশনা পৌঁছে দেয়। অংশীদারি মসজিদগুলোই এর কেন্দ্রে।</p>
       </div>
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-mobile-alt"></i>
           </div>
-          <h3>LBS Local Connection</h3>
-          <p>Location-based services connect worshippers with nearby mosques, fostering stronger local community bonds.</p>
+          <h3 data-i18n="home.howitworks.step1.title">১. ব্যবহারকারী প্রশ্ন করেন</h3>
+          <p data-i18n="home.howitworks.step1.desc">একজন মুসল্লি অ্যাপ খুলে যেকোনো প্রশ্ন করেন — ঈমান, বিবাহ, দৈনন্দিন জীবনের সংগ্রাম। পছন্দ তাঁর: নামে বা নাম ছাড়া। কোনো লজ্জা নেই, কোনো বাধা নেই।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-brain"></i>
+            <i class="fas fa-robot"></i>
           </div>
-          <h3>Smart Q&A Matching</h3>
-          <p>AI-powered question matching delivers relevant Islamic guidance instantly, available unlimited times.</p>
+          <h3 data-i18n="home.howitworks.step2.title">২. স্মার্ট মিলিয়ে দেখা</h3>
+          <p data-i18n="home.howitworks.step2.desc">অ্যাপটি তার উত্তর-ভাণ্ডার খুঁজে দেখে — শুরুতে থাকে ইমামদের লেখা ৪০০+ পূর্বপ্রস্তুত প্রশ্নোত্তর, যা প্রতিটি নতুন উত্তরে বাড়তে থাকে। মিল পেলেই উত্তর সরাসরি পৌঁছে যায়।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-user-tie"></i>
           </div>
-          <h3>Imam Q&A</h3>
-          <p>Direct access to qualified imams for personalized religious guidance and community leadership.</p>
+          <h3 data-i18n="home.howitworks.step3.title">৩. ইমাম উত্তর দেন</h3>
+          <p data-i18n="home.howitworks.step3.desc">পূর্বপ্রস্তুত উত্তর না থাকলে প্রশ্নটি অংশীদারি মসজিদের ইমামের কাছে যায়। ব্যবহারকারী চাইলে তাঁর বিশ্বস্ত কোনো নির্দিষ্ট ইমামকেও বেছে নিতে পারেন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-heart"></i>
           </div>
-          <h3>Privacy-Friendly</h3>
-          <p>Ask questions anonymously or with your identity — you are always in control of your privacy.</p>
+          <h3 data-i18n="home.howitworks.step4.title">৪. জীবন বদলায় এমন পথনির্দেশনা</h3>
+          <p data-i18n="home.howitworks.step4.desc">যেসব প্রশ্ন সরাসরি করা কঠিন, সেগুলোর উত্তর এখন পাওয়া যায়। আপনার ইমামের পথনির্দেশনা আরও দূর পর্যন্ত পৌঁছায় — সম্প্রদায় আরও সমর্থিত অনুভব করে।</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block">
+        <h2 class="section-title" data-i18n="home.why.title">কেন এটি গুরুত্বপূর্ণ</h2>
+        <p style="text-align: center; color: var(--text-light); margin-bottom: 2.5rem; font-size: 1.1rem;" data-i18n="home.why.subtitle">জীবনে এমন অনেক প্রশ্ন আছে যা মুখে বলা কঠিন।</p>
+        <p data-i18n="home.why.p1">বৈবাহিক সমস্যা, আর্থিক সংশয়, রূহানি বিভ্রান্তি — এমন অনেক ব্যক্তিগত সংগ্রাম যা শেয়ার করতে লজ্জা লাগে। অনেক মুসলিম নীরবে কষ্ট ভোগ করেন — ঈমানের অভাবে নয়, বরং বিচারের ভয়ে কাউকে জিজ্ঞাসা করার মতো কেউ নেই বলে।</p>
+        <p data-i18n="home.why.p2">একজন তরুণী মা প্রসবোত্তর উদ্বেগে ভুগছেন, ভাবছেন এমনটা অনুভব করা পাপ কি না। ঋণের বোঝায় ক্লান্ত একজন পিতা বুঝতে পারছেন না নির্দিষ্ট একটি ঋণ হালাল কি না। একজন কিশোর তাঁর ঈমান নিয়ে প্রশ্ন তুলছে কিন্তু মসজিদে কারও সাথে কথা বলতে ভয় পাচ্ছে।</p>
+        <p style="font-weight: 600; color: var(--primary-green);" data-i18n="home.why.p3">নূরআস্ক সেই বাধা ভেঙে দেয়।</p>
+        <p data-i18n="home.why.p4">এক ট্যাপে তাঁরা নির্ভয়ে প্রশ্ন করেন (নামে বা নাম ছাড়া)। আপনার ইমাম জ্ঞান ও সহানুভূতির সাথে উত্তর দেন। কোনো অস্বস্তি নেই, কোনো লজ্জা নেই — কেবল প্রয়োজনের সময় পথনির্দেশনা। এটিই একটি সম্প্রদায়কে সত্যিকারের গভীরে সমৃদ্ধ করে তোলে।</p>
       </div>
     </div>
   </section>
@@ -87,25 +113,25 @@
   <section class="section bg-green">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Growing Together</h2>
-        <p class="section-subtitle">Building a network of faith and knowledge across Bangladesh</p>
+        <h2 class="section-title" data-i18n="home.vision.title">আমাদের স্বপ্ন</h2>
+        <p class="section-subtitle" data-i18n="home.vision.subtitle">আমরা বাংলাদেশ জুড়ে ঈমান ও জ্ঞানের এক নেটওয়ার্ক গড়ছি</p>
       </div>
       <div class="stats-grid">
         <div class="stat-item">
-          <span class="stat-number">25+</span>
-          <span class="stat-label">Partner Mosques</span>
+          <span class="stat-number" data-i18n="home.vision.stat1n">১০০+</span>
+          <span class="stat-label" data-i18n="home.vision.stat1l">টার্গেট অংশীদারি মসজিদ</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">5,000+</span>
-          <span class="stat-label">Community Served</span>
+          <span class="stat-number" data-i18n="home.vision.stat2n">৫০,০০০+</span>
+          <span class="stat-label" data-i18n="home.vision.stat2l">সেবার জন্য সম্প্রদায়</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">8</span>
-          <span class="stat-label">Cities Covered</span>
+          <span class="stat-number" data-i18n="home.vision.stat3n">১৫</span>
+          <span class="stat-label" data-i18n="home.vision.stat3l">শহর</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number">10,000+</span>
-          <span class="stat-label">Questions Answered</span>
+          <span class="stat-number" data-i18n="home.vision.stat4n">∞</span>
+          <span class="stat-label" data-i18n="home.vision.stat4l">উত্তর দেওয়ার মতো প্রশ্ন</span>
         </div>
       </div>
     </div>
@@ -114,11 +140,11 @@
   <!-- CTA Section -->
   <section class="section">
     <div class="container" style="text-align: center;">
-      <h2 class="section-title">Join the NoorAsk Network</h2>
-      <p class="section-subtitle">Whether you are a mosque looking to expand your reach or a community member seeking guidance, NoorAsk welcomes you.</p>
+      <h2 class="section-title" data-i18n="home.cta.title">আপনার মসজিদকে সাথে নিতে প্রস্তুত?</h2>
+      <p class="section-subtitle" data-i18n="home.cta.subtitle">নূরআস্ক মসজিদের সাথে একত্রে গড়ে ওঠে। যোগ দিন এবং আপনার সম্প্রদায়কে অ্যাপের মাধ্যমে সেবা দিন। অংশীদারিত্ব সম্পূর্ণ ফ্রি।</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="./partnership.html" class="btn btn-primary">Become a Partner Mosque</a>
-        <a href="./representatives.html" class="btn btn-outline">Become a Representative</a>
+        <a href="./partnership.html" class="btn btn-primary" data-i18n="btn.partner">মসজিদের সাথে অংশীদারি করুন</a>
+        <a href="./about.html" class="btn btn-outline" data-i18n="btn.learnMore">আরও জানুন</a>
       </div>
     </div>
   </section>
@@ -129,7 +155,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -137,32 +163,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

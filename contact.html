@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact NoorAsk. Reach out for partnership, representation, or general inquiries.">
-  <title>Contact Us - NoorAsk</title>
+  <meta name="description" content="নূরআস্কের সাথে যোগাযোগ — মসজিদ অংশীদারিত্ব অনুসন্ধান। আপনার মসজিদ যুক্ত করুন বা প্রতিনিধি হোন।">
+  <title>যোগাযোগ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html" class="active">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li class="active"><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,8 @@
   <!-- Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p class="tagline">We are here to answer your questions and explore how we can work together</p>
+      <h1 data-i18n="contact.title">যোগাযোগ</h1>
+      <p class="tagline" data-i18n="contact.hero.tagline">মসজিদকে সহানুভূতিশীল, নির্ভয় ইমামি পথনির্দেশনা পৌঁছে দিতে সাহায্য করুন</p>
     </div>
   </section>
 
@@ -43,38 +52,38 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">Reach out through any of the channels below</p>
+        <h2 class="section-title" data-i18n="contact.info.title">যোগাযোগ করুন</h2>
+        <p class="section-subtitle" data-i18n="contact.info.subtitle">নিচের যেকোনো মাধ্যমে যোগাযোগ করুন</p>
       </div>
       <div class="contact-grid">
         <div class="card contact-card">
           <i class="fas fa-user-tie"></i>
-          <h3>Project Lead</h3>
-          <p>Jovi Lee</p>
-          <p style="font-size: 0.9rem; color: var(--text-light);">Product Manager & Co-Founder</p>
+          <h3 data-i18n="contact.info.lead.title">প্রজেক্ট লিড</h3>
+          <p data-i18n="contact.info.lead.name">Jovi</p>
+          <p style="font-size: 0.9rem; color: var(--text-light);" data-i18n="contact.info.lead.role">প্রোডাক্ট ম্যানেজার ও সহ-প্রতিষ্ঠাতা</p>
         </div>
         <div class="card contact-card">
           <i class="fas fa-envelope"></i>
-          <h3>Email</h3>
-          <p><a href="mailto:contact@noorask.online">contact@noorask.online</a></p>
-          <p style="font-size: 0.9rem; color: var(--text-light);">We reply within 2 business days</p>
+          <h3 data-i18n="contact.info.email.title">ইমেইল</h3>
+          <p><a href="mailto:contact@noorask.online" data-i18n="contact.info.email.value">contact@noorask.online</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-light);" data-i18n="contact.info.email.note">২ কর্মদিবসের মধ্যে উত্তর দেওয়া হয়</p>
         </div>
         <div class="card contact-card">
           <i class="fab fa-telegram-plane"></i>
-          <h3>Telegram</h3>
-          <p><a href="https://t.me/nooraskbangladesh" target="_blank">t.me/nooraskbangladesh</a></p>
-          <p style="font-size: 0.9rem; color: var(--text-light);">Fastest response for urgent matters</p>
+          <h3 data-i18n="contact.info.tg.title">টেলিগ্রাম</h3>
+          <p><a href="https://t.me/nooraskbangladesh" target="_blank" data-i18n="contact.info.tg.value">t.me/nooraskbangladesh</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-light);" data-i18n="contact.info.tg.note">জরুরি বিষয়ে দ্রুততম উত্তর</p>
         </div>
         <div class="card contact-card">
           <i class="fab fa-facebook-f"></i>
-          <h3>Facebook</h3>
-          <p><a href="https://facebook.com/nooraskbangladesh" target="_blank">facebook.com/nooraskbangladesh</a></p>
-          <p style="font-size: 0.9rem; color: var(--text-light);">Follow us for updates and events</p>
+          <h3 data-i18n="contact.info.fb.title">ফেসবুক</h3>
+          <p><a href="https://facebook.com/nooraskbangladesh" target="_blank" data-i18n="contact.info.fb.value">facebook.com/nooraskbangladesh</a></p>
+          <p style="font-size: 0.9rem; color: var(--text-light);" data-i18n="contact.info.fb.note">আপডেট ও ইভেন্টের জন্য ফলো করুন</p>
         </div>
       </div>
 
       <div style="text-align: center; margin-top: 3rem;">
-        <h3 style="margin-bottom: 1rem;">Connect With Us</h3>
+        <h3 style="margin-bottom: 1rem;" data-i18n="contact.connect">আমাদের সাথে যুক্ত হোন</h3>
         <div class="social-links">
           <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
           <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -90,7 +99,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -98,32 +107,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

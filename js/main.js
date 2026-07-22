@@ -1,4 +1,4 @@
-/* NoorAsk - Main JavaScript */
+/* NoorAsk - Main JavaScript | v2.0 - Your Personal Imam */
 
 document.addEventListener('DOMContentLoaded', function() {
   initNavbar();

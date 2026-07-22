@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frequently asked questions about NoorAsk partnership, content, technology, finance, and representatives.">
-  <title>FAQ - NoorAsk</title>
+  <meta name="description" content="সাধারণ প্রশ্ন — নূরআস্ক মসজিদ অংশীদারিত্ব সম্পর্কে। যোগ দেওয়া, বিষয়বস্তু, প্রযুক্তি, তহবিল ও প্রতিনিধি সম্পর্কিত প্রশ্নোত্তর।">
+  <title>সাধারণ প্রশ্ন</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html" class="active">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li class="active"><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,8 @@
   <!-- Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>Frequently Asked Questions</h1>
-      <p class="tagline">Find answers to common questions about NoorAsk</p>
+      <h1 data-i18n="faq.title">সাধারণ প্রশ্ন</h1>
+      <p class="tagline" data-i18n="faq.hero.tagline">নির্ভয়ে ইমামের কাছে প্রশ্ন ও মসজিদ অংশীদারিত্ব সম্পর্কে যা জানা দরকার</p>
     </div>
   </section>
 
@@ -45,169 +54,178 @@
 
       <!-- Partnership -->
       <div class="faq-category">
-        <h2 class="faq-category-title"><i class="fas fa-handshake" style="margin-right: 0.5rem; color: var(--accent-gold);"></i>Partnership</h2>
+        <h2 class="faq-category-title"><i class="fas fa-handshake" style="margin-right: 0.5rem; color: var(--accent-gold);"></i><span data-i18n="faq.cat.partnership">অংশীদারিত্ব</span></h2>
         <div class="faq-item">
           <button class="faq-question">
-            How does a mosque apply to partner with NoorAsk?
+            <span data-i18n="faq.p1.q">একটি মসজিদ কীভাবে নূরআস্কের সাথে অংশীদারি করে?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Mosques can apply through our online partnership form on the <a href="./partnership.html">Partnership page</a>. After submission, our team reviews the application and typically responds within 3 business days.</p>
+            <p data-i18n="faq.p1.a">মসজিদ আমাদের সাথে যোগাযোগ করে অংশীদারি শুরু করতে পারে। আমাদের দল মসজিদের সাথে কথা বলে প্ল্যাটফর্ম ও অংশীদারিত্বের সুযোগ তুলে ধরে। আবেদন ফর্ম শীঘ্রই উপলব্ধ হবে — এখন যোগাযোগ পৃষ্ঠা ব্যবহার করুন।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Is there any cost for mosques to join?
+            <span data-i18n="faq.p2.q">মসজিদের যোগ দেওয়ার কোনো খরচ আছে কি?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>No. Joining NoorAsk as a partner mosque is completely free. We operate on a public-interest model and do not charge mosques for participation.</p>
+            <p data-i18n="faq.p2.a">না। নূরআস্কে অংশীদারি মসজিদ হিসেবে যোগ দেওয়া সম্পূর্ণ ফ্রি। আমরা জনকল্যাণমূলক মডেলে পরিচালিত; মসজিদ থেকে কোনো ফি নেওয়া হয় না।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            What information does a mosque need to provide?
+            <span data-i18n="faq.p3.q">মসজিদের কী তথ্য দিতে হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Basic mosque details (name, address, contact), imam information, prayer times, and a brief description of the community you serve.</p>
+            <p data-i18n="faq.p3.a">মসজিদের সাধারণ তথ্য (নাম, ঠিকানা, যোগাযোগ), ইমাম পরিচিতি, নামাজের সময় এবং আপনার সেবার সম্প্রদায় সম্পর্কে সংক্ষিপ্ত বিবরণ।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Can a mosque leave the platform at any time?
+            <span data-i18n="faq.p4.q">মসজিদ কি যেকোনো সময় প্ল্যাটফর্ম ছাড়তে পারে?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Yes. Partnership is voluntary. A mosque may withdraw at any time by providing 30 days' written notice.</p>
+            <p data-i18n="faq.p4.a">হ্যাঁ। অংশীদারিত্ব সম্পূর্ণ স্বেচ্ছাসেবী। ৩০ দিনের লিখিত নোটিশ দিলে মসজিদ যেকোনো সময় প্ল্যাটফর্ম ছাড়তে পারে।</p>
           </div>
         </div>
       </div>
 
       <!-- Content -->
       <div class="faq-category">
-        <h2 class="faq-category-title"><i class="fas fa-book-open" style="margin-right: 0.5rem; color: var(--accent-gold);"></i>Content</h2>
+        <h2 class="faq-category-title"><i class="fas fa-book-open" style="margin-right: 0.5rem; color: var(--accent-gold);"></i><span data-i18n="faq.cat.content">বিষয়বস্তু</span></h2>
         <div class="faq-item">
           <button class="faq-question">
-            Who provides the answers on NoorAsk?
+            <span data-i18n="faq.c1.q">নূরআস্কের উত্তরগুলো কে দেন?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Answers come from two sources: (1) AI-matched responses derived from verified Islamic sources, and (2) direct answers from qualified imams of partner mosques.</p>
+            <p data-i18n="faq.c1.a">নূরআস্কের সকল উত্তর আসে অংশীদারি মসজিদের যোগ্যতাসম্পন্ন ইমামদের কাছ থেকে। অ্যাপ চালুর সময় এতে থাকবে ইমামদের সাথে একত্রে তৈরি ৪০০+ পূর্বপ্রস্তুত প্রশ্নোত্তর — ঈমান, বিবাহ, দৈনন্দিন জীবন ইত্যাদি বিষয়ে — যাতে প্রথম দিন থেকেই ব্যবহারকারী তাৎক্ষণিক উত্তর পান। ইমামগণ নতুন প্রশ্নের উত্তর দিতে থাকলে উত্তর-ভাণ্ডার স্বাভাবিকভাবে বাড়তে থাকে — যত বেশি ইমাম উত্তর দেন, তত বেশি প্রশ্নের স্বয়ংক্রিয় মিল পাওয়া যায়। ব্যবহারকারী প্রশ্ন করলে অ্যাপ প্রথমে দেখে মিল আছে কি না। না থাকলে নিকটস্থ অংশীদারি মসজিদের ইমামের কাছে যায়। ব্যবহারকারী নির্দিষ্ট ইমামও বেছে নিতে পারেন। প্রতিটি উত্তর প্রামাণিক, কারণ তা সরাসরি যোগ্যতাসম্পন্ন ইমামের থেকে আসে।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Is the content verified for accuracy?
+            <span data-i18n="faq.c2.q">বিষয়বস্তু কি নির্ভুলতার জন্য যাচাই করা হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Yes. All AI-generated content is sourced from established Islamic texts and reviewed by our content team. Imam answers are the responsibility of the respective scholars.</p>
+            <p data-i18n="faq.c2.a">হ্যাঁ। প্রারম্ভিক ৪০০+ উত্তর যোগ্যতাসম্পন্ন ইমামগণ প্রস্তুত করেন এবং আমাদের বিষয়বস্তু দল পর্যালোচনা করে। অংশীদারি মসজিদের ইমামগণ নতুন প্রশ্নের উত্তর দিলে প্রতিটি উত্তর সেই আলেমের প্রামাণ্য বহন করে যিনি তা লিখেছেন। সকল বিষয়বস্তু কুরআন, সহীহ হাদিস ও প্রতিষ্ঠিত ইসলামিক জ্ঞানের ওপর প্রতিষ্ঠিত।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            What languages are supported?
+            <span data-i18n="faq.c3.q">কোন ভাষাগুলো সমর্থিত?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Currently we support English and Bengali. Arabic content (Quran, hadith) is displayed with translations. We plan to expand language support based on demand.</p>
+            <p data-i18n="faq.c3.a">বর্তমানে আমরা বাংলা ও ইংরেজি সমর্থন করি। আরবি বিষয়বস্তু (কুরআন, হাদিস) অনুবাদসহ প্রদর্শিত হয়। চাহিদার ভিত্তিতে ভাষা সমর্থন বাড়ানোর পরিকল্পনা রয়েছে।</p>
           </div>
         </div>
       </div>
 
       <!-- Technology -->
       <div class="faq-category">
-        <h2 class="faq-category-title"><i class="fas fa-laptop-code" style="margin-right: 0.5rem; color: var(--accent-gold);"></i>Technology</h2>
+        <h2 class="faq-category-title"><i class="fas fa-laptop-code" style="margin-right: 0.5rem; color: var(--accent-gold);"></i><span data-i18n="faq.cat.technology">প্রযুক্তি</span></h2>
         <div class="faq-item">
           <button class="faq-question">
-            Is NoorAsk available as a mobile app?
+            <span data-i18n="faq.t1.q">নূরআস্ক কি মোবাইল অ্যাপ হিসেবে উপলব্ধ?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>We are developing both iOS and Android apps. In the meantime, the platform is fully accessible through any mobile browser at noorask.online.</p>
+            <p data-i18n="faq.t1.a">আমরা নূরআস্ক অ্যান্ড্রয়েড অ্যাপ গড়ছি। অ্যাপটি ব্যবহারকারীকে নামে বা নাম ছাড়া প্রশ্ন করার সুযোগ দেবে, ৪০০+ প্রশ্নোত্তর ভাণ্ডার থেকে স্বয়ংক্রিয় মিলিত উত্তর পাওয়ার সুবিধা দেবে, অথবা নিকটস্থ অংশীদারি মসজিদের ইমামের কাছে প্রশ্ন পাঠানোর সুবিধা দেবে। ব্যবহারকারী নির্দিষ্ট ইমামকেও বেছে নিতে পারবেন — যেকোনো সময়, তাঁদের ফোন থেকে।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            How is user data protected?
+            <span data-i18n="faq.t2.q">ব্যবহারকারীর তথ্য কীভাবে সুরক্ষিত হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>We use industry-standard encryption and never sell user data. Anonymous questions are not linked to any personal identifier. See our <a href="#">Privacy Policy</a> for details.</p>
+            <p data-i18n="faq.t2.a">আমরা শিল্পমানের এনক্রিপশন ব্যবহার করি এবং ব্যবহারকারীর তথ্য কখনো বিক্রি করি না। নাম ছাড়া প্রশ্ন কোনো ব্যক্তিগত শনাক্তকারীর সাথে যুক্ত হয় না। বিস্তারিত জানতে গোপনীয়তা নীতি দেখুন।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            What happens if the platform goes offline?
+            <span data-i18n="faq.t3.q">প্ল্যাটফর্ম অফলাইন হলে কী হবে?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>We use Cloudflare and redundant hosting to ensure high availability. In the unlikely event of downtime, all data is safely backed up and will be restored.</p>
+            <p data-i18n="faq.t3.a">আমরা Cloudflare ও রিডান্ড্যান্ট হোস্টিং ব্যবহার করে উচ্চ প্রাপ্যতা নিশ্চিত করি। বিরল ক্ষেত্রে ডাউনটাইম হলেও সকল তথ্য নিরাপদে ব্যাকআপ থাকে এবং পুনরুদ্ধার করা হবে।</p>
           </div>
         </div>
       </div>
 
       <!-- Finance -->
       <div class="faq-category">
-        <h2 class="faq-category-title"><i class="fas fa-coins" style="margin-right: 0.5rem; color: var(--accent-gold);"></i>Finance</h2>
+        <h2 class="faq-category-title"><i class="fas fa-coins" style="margin-right: 0.5rem; color: var(--accent-gold);"></i><span data-i18n="faq.cat.finance">অর্থ</span></h2>
         <div class="faq-item">
           <button class="faq-question">
-            How is NoorAsk funded?
+            <span data-i18n="faq.f1.q">নূরআস্ক কীভাবে অর্থায়িত হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>NoorAsk is funded through voluntary donations from the community, grants from Islamic organizations, and strategic partnerships. We do not display advertisements.</p>
+            <p data-i18n="faq.f1.a">নূরআস্ক সম্প্রদায়ের স্বেচ্ছায় দান, ইসলামিক সংস্থার অনুদান ও কৌশলগত অংশীদারিত্বের মাধ্যমে অর্থায়িত। আমরা কোনো বিজ্ঞাপন প্রদর্শন করি না। তহবিল বণ্টনের বিস্তারিত স্বচ্ছতা পৃষ্ঠায় দেখুন।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Can I donate to a specific mosque?
+            <span data-i18n="faq.f2.q">আমি কি নির্দিষ্ট মসজিদে দান করতে পারি?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Yes. During the donation process, you can select a specific partner mosque to support, or choose to contribute to the general platform fund.</p>
+            <p data-i18n="faq.f2.a">হ্যাঁ। দানের সময় আপনি নির্দিষ্ট অংশীদারি মসজিদ বেছে নিতে পারেন, অথবা সাধারণ প্ল্যাটফর্ম তহবিলে অবদান রাখতে পারেন।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Are donations tax-deductible?
+            <span data-i18n="faq.f3.q">দান কি কর-ছাড়যোগ্য?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Tax deductibility depends on your jurisdiction. We are working to obtain charitable status in key regions. Please <a href="./contact.html">contact us</a> for specific documentation.</p>
+            <p data-i18n="faq.f3.a">কর-ছাড়যোগ্যতা আপনার এখতিয়ারের ওপর নির্ভর করে। আমরা মূল অঞ্চলে দাতব্য স্ট্যাটাস পেতে কাজ করছি। নির্দিষ্ট কাগজপত্রের জন্য যোগাযোগ করুন।</p>
           </div>
         </div>
       </div>
 
       <!-- Representatives -->
       <div class="faq-category">
-        <h2 class="faq-category-title"><i class="fas fa-users" style="margin-right: 0.5rem; color: var(--accent-gold);"></i>Representatives</h2>
+        <h2 class="faq-category-title"><i class="fas fa-users" style="margin-right: 0.5rem; color: var(--accent-gold);"></i><span data-i18n="faq.cat.rep">প্রতিনিধি</span></h2>
         <div class="faq-item">
           <button class="faq-question">
-            Who can become a representative?
+            <span data-i18n="faq.r1.q">কে নূরআস্ক অফিসিয়াল প্রতিনিধি হতে পারেন?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Any committed Muslim with good community standing, reliable internet access, and a passion for serving local mosques can apply. Prior sales or community experience is helpful but not required.</p>
+            <p data-i18n="faq.r1.a">সম্প্রদায়ে ভালো অবস্থান, নির্ভরযোগ্য ইন্টারনেট সংযোগ ও স্থানীয় মসজিদের সেবায় আগ্রহ আছে এমন যেকোনো একনিষ্ঠ মুসলিম আবেদন করতে পারেন। পূর্ববর্তী সম্প্রদায় অভিজ্ঞতা সহায়ক, কিন্তু আবশ্যক নয়।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            How are representatives trained?
+            <span data-i18n="faq.r2.q">প্রতিনিধিদের কীভাবে ক্ষতিপূরণ দেওয়া হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Approved representatives receive a digital onboarding kit, video training sessions, and access to a dedicated support channel. We also host monthly virtual meetups.</p>
+            <p data-i18n="faq.r2.a">নূরআস্ক একটি জনকল্যাণমূলক প্রকল্প। আপনার আনা অংশীদারি মসজিদগুলো যদি দান সংগ্রহে সাহায্য করে, তবে আপনার প্রচেষ্টার জন্য দানের ২০% কমিশন হিসেবে প্রদান করা হবে। দান না এলে কমিশন নেই — কেবল সম্প্রদায়ের প্রতি সৎ সেবা।</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">
-            Can a representative serve multiple cities?
+            <span data-i18n="faq.r3.q">প্রতিনিধিদের কীভাবে প্রশিক্ষণ দেওয়া হয়?</span>
             <i class="fas fa-chevron-down"></i>
           </button>
           <div class="faq-answer">
-            <p>Initially, representatives focus on one city or district to ensure quality. High-performing representatives may be promoted to regional roles.</p>
+            <p data-i18n="faq.r3.a">অনুমোদিত প্রতিনিধিরা একটি ডিজিটাল অনবোর্ডিং কিট, ভিডিও প্রশিক্ষণ সেশন এবং একটি বিশেষ সহায়তা চ্যানেলে প্রবেশাধিকার পান। আমরা মাসিক ভার্চুয়াল মিটআপও আয়োজন করি।</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.r4.q">একজন প্রতিনিধি কি একাধিক শহরে সেবা দিতে পারেন?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq.r4.a">প্রাথমিকভাবে প্রতিনিধিরা মান নিশ্চিত করতে একটি শহর বা জেলায় মনোনিবেশ করেন। উচ্চ-পারফর্মিং প্রতিনিধিকে আঞ্চলিক ভূমিকায় পদোন্নতি দেওয়া হতে পারে।</p>
           </div>
         </div>
       </div>
@@ -221,7 +239,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -229,32 +247,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

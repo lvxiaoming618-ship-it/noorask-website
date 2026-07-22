@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Partner your mosque with NoorAsk. Digital visibility, online da'wah, and community engagement.">
-  <title>Mosque Partnership - NoorAsk</title>
+  <meta name="description" content="আপনার মসজিদকে নূরআস্কের সাথে যুক্ত করুন। ফ্রি ডিজিটাল উপস্থিতি, ইমাম প্রশ্নোত্তর প্ল্যাটফর্ম, এবং আপনার মসজিদের জন্য সম্প্রদায় সংযোগ টুল।">
+  <title>মসজিদ অংশীদারিত্ব</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html" class="active">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li class="active"><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,9 @@
   <!-- Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>Mosque Partnership</h1>
-      <p class="tagline">Grow your mosque's reach, serve your community better, and embrace the blessings of digital da'wah</p>
+      <div class="free-badge"><i class="fas fa-gift"></i><span data-i18n="badge.free">১০০% ফ্রি</span></div>
+      <h1 data-i18n="partner.title">মসজিদ অংশীদারিত্ব</h1>
+      <p class="tagline" data-i18n="partner.hero.tagline">আপনার সম্প্রদায়কে এক নিরাপদ স্থান দিন — নির্ভয়ে প্রশ্ন করার, এবং আপনার ইমামের পথনির্দেশনা পাওয়ার</p>
     </div>
   </section>
 
@@ -43,44 +53,44 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Why Partner With Us?</h2>
-        <p class="section-subtitle">Tangible benefits for your mosque and community</p>
+        <h2 class="section-title" data-i18n="partner.value.title">কেন আমাদের সাথে অংশীদারি করবেন?</h2>
+        <p class="section-subtitle" data-i18n="partner.value.subtitle">প্রথমে মুসল্লিদের জন্য মূল্য তৈরি হয় — তারপর মসজিদও লাভবান হয়। মুসল্লি যদি অ্যাপ পছন্দ করেন, তবেই মসজিদের সাথে তাঁদের সংযোগ গভীর হয়।</p>
       </div>
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-desktop"></i>
+            <i class="fas fa-users"></i>
           </div>
-          <h3>Digital Showcase</h3>
-          <p>Your mosque gets a dedicated homepage on NoorAsk — prayer times, events, announcements, and contact info, all in one place.</p>
+          <h3 data-i18n="partner.value.userFirst">ব্যবহারকারীর মূল্য আগে</h3>
+          <p data-i18n="partner.value.userFirstDesc">মুসল্লিরা যা পান: নির্ভয়ে প্রশ্ন করার সুযোগ, নামে বা নাম ছাড়া। অনেক প্রশ্ন সরাসরি করা কঠিন — নূরআস্ক সেই লজ্জা দূর করে। যখন ব্যবহারকারী অ্যাপকে ভালোবাসেন, তখনই তাঁরা আপনার মসজিদের সাথে আরও গভীরভাবে যুক্ত হন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-bullhorn"></i>
+            <i class="fas fa-handshake"></i>
           </div>
-          <h3>Online Da'wah Channel</h3>
-          <p>Extend your mosque's voice beyond physical walls. Share sermons, articles, and religious reminders with a wider audience.</p>
+          <h3 data-i18n="partner.value.cocreate.title">অ্যাপ মসজিদের সাথে একত্রে গড়ে ওঠে</h3>
+          <p data-i18n="partner.value.cocreateDesc">আপনার ইমামগণই প্রকৃত বিশেষজ্ঞ। অ্যাপ চালু হওয়ার আগে আমরা আপনার ইমামদের সাথে মিলে ৪০০+ মৌলিক প্রশ্নোত্তর তৈরি করি। চালু হওয়ার পরে ইমামগণ কেবল নিজ মসজিদের আশপাশের মুসল্লিদের প্রশ্নের উত্তর দেন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-comments"></i>
+            <i class="fas fa-bridge"></i>
           </div>
-          <h3>Congregation Engagement</h3>
-          <p>Interact directly with your community through Q&A, polls, and feedback — strengthening relationships beyond Friday prayers.</p>
+          <h3 data-i18n="partner.value.bridge.title">মসজিদ-মুসল্লি সেতুবন্ধন</h3>
+          <p data-i18n="partner.value.bridgeDesc">অ্যাপটি হলো মসজিদ ও মুসল্লিদের মাঝে এক নতুন সেতু। মুসল্লিরা আসলে আপনার সম্প্রদায়েরই অংশ — কিছু প্রশ্ন তাঁরা সরাসরি করতে পারেন, আর কিছু প্রশ্ন যা মুখে বলা কঠিন, সেগুলো অ্যাপে করেন। নামে হোক বা নাম ছাড়া — ইমামের পথনির্দেশনা পৌঁছে যায়।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-hand-holding-heart"></i>
+            <i class="fas fa-broadcast-tower"></i>
           </div>
-          <h3>Reward of Good Deeds</h3>
-          <p>Every question answered, every guidance shared, every heart softened — all recorded as continuous charity (sadaqah jariyah).</p>
+          <h3 data-i18n="partner.value.depth.title">গভীরতর পৌঁছানোর পরিধি</h3>
+          <p data-i18n="partner.value.depthDesc">মসজিদের সাথে মুসল্লিদের সংযোগ আরও গভীর হয়। যাঁরা মসজিদে আসেন, তাঁরা আরও সমর্থিত অনুভব করেন; যাঁরা আসতে পারেন না, তাঁরাও ইমামের পথনির্দেশনা থেকে উপকৃত হন। আল্লাহর সাহায্যে গভীরতর পথনির্দেশনা পৌঁছে যায়।</p>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-donate"></i>
+            <i class="fas fa-gift"></i>
           </div>
-          <h3>Voluntary Fundraising</h3>
-          <p>Accept transparent, voluntary donations from supporters to fund your mosque's activities and maintenance.</p>
+          <h3 data-i18n="partner.value.free.title">১০০% ফ্রি</h3>
+          <p data-i18n="partner.value.freeDesc">যোগ দেওয়া, অ্যাপ ব্যবহার, ইমামের উত্তর — সবকিছুই সম্পূর্ণ ফ্রি। আমরা জনকল্যাণমূলক মডেলে পরিচালিত; মসজিদ থেকে কোনো ফি নেওয়া হয় না। দান সম্পূর্ণ ঐচ্ছিক — কোনো চাপ নেই।</p>
         </div>
       </div>
     </div>
@@ -90,29 +100,29 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Partnership Process</h2>
-        <p class="section-subtitle">Simple steps to join the NoorAsk network</p>
+        <h2 class="section-title" data-i18n="partner.process.title">অংশীদারিত্বের প্রক্রিয়া</h2>
+        <p class="section-subtitle" data-i18n="partner.process.subtitle">নূরআস্ক নেটওয়ার্কে যোগ দেওয়ার সহজ ধাপসমূহ</p>
       </div>
       <div class="process-steps">
         <div class="step">
           <span class="step-number">1</span>
-          <span class="step-text">Fill Application</span>
+          <span class="step-text" data-i18n="partner.process.step1">আবেদন পূরণ</span>
         </div>
         <div class="step">
           <span class="step-number">2</span>
-          <span class="step-text">Review Approved</span>
+          <span class="step-text" data-i18n="partner.process.step2">পর্যালোচনা ও অনুমোদন</span>
         </div>
         <div class="step">
           <span class="step-number">3</span>
-          <span class="step-text">Online Signing</span>
+          <span class="step-text" data-i18n="partner.process.step3">অনলাইন চুক্তি স্বাক্ষর</span>
         </div>
         <div class="step">
           <span class="step-number">4</span>
-          <span class="step-text">Content Prep</span>
+          <span class="step-text" data-i18n="partner.process.step4">বিষয়বস্তু প্রস্তুতি</span>
         </div>
         <div class="step">
           <span class="step-number">5</span>
-          <span class="step-text">Launch & Promote</span>
+          <span class="step-text" data-i18n="partner.process.step5">চালু ও প্রচার</span>
         </div>
       </div>
     </div>
@@ -121,15 +131,10 @@
   <!-- Application CTA -->
   <section class="section bg-cream">
     <div class="container" style="text-align: center;">
-      <h2 class="section-title">Ready to Partner?</h2>
-      <p class="section-subtitle">Apply today and a member of our team will reach out within 3 business days.</p>
-      <button class="btn btn-primary" id="applyBtn" style="margin-bottom: 1.5rem;">Apply Now</button>
-      <div id="typeformArea" style="display: none;">
-        <div class="typeform-placeholder">
-          <i class="fas fa-clipboard-list"></i>
-          <p>Please fill out our partnership application form</p>
-          <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">(Typeform embed will be placed here)</p>
-        </div>
+      <h2 class="section-title" data-i18n="partner.apply.title">অংশীদারি করতে প্রস্তুত?</h2>
+      <p class="section-subtitle" data-i18n="partner.apply.subtitle">অংশীদারিত্বের আবেদন ফর্ম শীঘ্রই এখানে আসবে। এখন আমাদের সাথে সরাসরি যোগাযোগ করুন।</p>
+      <div style="margin-top: 1.5rem;">
+        <a href="./contact.html" class="btn btn-primary" data-i18n="partner.apply.contactInstead">যোগাযোগ পৃষ্ঠায় যান</a>
       </div>
     </div>
   </section>
@@ -137,12 +142,11 @@
   <!-- Online Signing Section -->
   <section class="section">
     <div class="container" style="text-align: center;">
-      <h2 class="section-title">Online Partnership Agreement</h2>
-      <p class="section-subtitle">Once approved, sign your partnership agreement securely online</p>
+      <h2 class="section-title" data-i18n="partner.sign.title">অনলাইন অংশীদারি চুক্তি</h2>
+      <p class="section-subtitle" data-i18n="partner.sign.subtitle">অনুমোদিত হলে আপনার অংশীদারি চুক্তি নিরাপদে অনলাইনে স্বাক্ষর করুন</p>
       <div class="dropboxsign-placeholder">
         <i class="fas fa-file-signature"></i>
-        <p>Online partnership agreement signing will be available here</p>
-        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">(Dropbox Sign embed will be placed here)</p>
+        <p data-i18n="partner.sign.placeholder">অনলাইন অংশীদারি চুক্তি স্বাক্ষর শীঘ্রই এখানে উপলব্ধ হবে</p>
       </div>
     </div>
   </section>
@@ -153,7 +157,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -161,39 +165,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
-  <script>
-    document.getElementById('applyBtn').addEventListener('click', function() {
-      var area = document.getElementById('typeformArea');
-      area.style.display = area.style.display === 'none' ? 'block' : 'none';
-      this.textContent = area.style.display === 'none' ? 'Apply Now' : 'Hide Form';
-    });
-  </script>
 </body>
 </html>

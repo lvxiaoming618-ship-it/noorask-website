@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Become a NoorAsk representative. Help us partner with mosques across Bangladesh.">
-  <title>Become a Representative - NoorAsk</title>
+  <meta name="description" content="নূরআস্ক প্রতিনিধি হোন। আপনার এলাকার মসজিদগুলোকে প্ল্যাটফর্মে যুক্ত করতে সাহায্য করুন এবং সম্প্রদায়ের সেবা করুন।">
+  <title>নূরআস্ক অফিসিয়াল প্রতিনিধি</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html" class="active">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li class="active"><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,8 @@
   <!-- Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>Representatives</h1>
-      <p class="tagline">Be the local champion connecting mosques to NoorAsk in your community</p>
+      <h1 data-i18n="rep.title">নূরআস্ক অফিসিয়াল প্রতিনিধি</h1>
+      <p class="tagline" data-i18n="rep.hero.tagline">নূরআস্ক অফিসিয়াল প্রতিনিধি হোন — অ্যাপের মাধ্যমে মসজিদকে তাদের সম্প্রদায়ের সেবায় সহায়তা করুন</p>
     </div>
   </section>
 
@@ -43,76 +52,53 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Your Responsibilities</h2>
-        <p class="section-subtitle">Four key ways you will help grow the NoorAsk network</p>
+        <h2 class="section-title" data-i18n="rep.role.title">আপনার দায়িত্ব</h2>
+        <p class="section-subtitle" data-i18n="rep.role.subtitle">নূরআস্ক নেটওয়ার্ক বাড়াতে চারটি মূল ভূমিকা</p>
       </div>
       <div class="cards-grid">
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-bullhorn"></i>
           </div>
-          <h3>Local Promotion</h3>
-          <p>Spread awareness about NoorAsk within your city or district through community events, social media, and word of mouth.</p>
+          <h3 data-i18n="rep.role.r1.title">স্থানীয় প্রচার</h3>
+          <p data-i18n="rep.role.r1.desc">সম্প্রদায়ের ইভেন্ট, সোশ্যাল মিডিয়া ও মুখে মুখে আপনার শহর বা জেলায় নূরআস্ক সম্পর্কে সচেতনতা ছড়িয়ে দিন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-handshake"></i>
           </div>
-          <h3>Mosque Outreach</h3>
-          <p>Identify and approach mosques that would benefit from partnering with NoorAsk. Present the platform and its value.</p>
+          <h3 data-i18n="rep.role.r2.title">মসজিদ সংযোগ</h3>
+          <p data-i18n="rep.role.r2.desc">এমন মসজিদগুলো খুঁজে বের করুন যারা নূরআস্কের সাথে অংশীদারি করে উপকৃত হবে। তাদের কাছে প্ল্যাটফর্ম ও এর মূল্য তুলে ধরুন।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-file-signature"></i>
           </div>
-          <h3>Signing Support</h3>
-          <p>Assist mosques in completing the partnership application and guide them through the online agreement signing process.</p>
+          <h3 data-i18n="rep.role.r3.title">স্বাক্ষর সহায়তা</h3>
+          <p data-i18n="rep.role.r3.desc">মসজিদগুলোকে অংশীদারি আবেদন পূরণে সাহায্য করুন এবং অনলাইন চুক্তি স্বাক্ষর প্রক্রিয়ায় পথ দেখান।</p>
         </div>
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-question-circle"></i>
           </div>
-          <h3>Q&A Support</h3>
-          <p>Be the first point of contact for mosque partners in your area, answering basic questions and escalating when needed.</p>
+          <h3 data-i18n="rep.role.r4.title">প্রশ্নোত্তর সহায়তা</h3>
+          <p data-i18n="rep.role.r4.desc">আপনার এলাকার অংশীদারি মসজিদের প্রথম যোগাযোগ বিন্দু হোন — সাধারণ প্রশ্নের উত্তর দিন এবং প্রয়োজনে প্রধান দলের কাছে পাঠান।</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Incentive Table -->
+  <!-- Compensation -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Incentive Structure</h2>
-        <p class="section-subtitle">Your dedication is recognized and rewarded</p>
+        <h2 class="section-title" data-i18n="rep.comp.title">ক্ষতিপূরণ</h2>
+        <p class="section-subtitle" data-i18n="rep.comp.subtitle">নূরআস্ক একটি জনকল্যাণমূলক প্রকল্প — আপনার প্রচেষ্টায় দান এলে আপনি একটি অংশ পান</p>
       </div>
-      <div class="table-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Milestone</th>
-              <th>Reward</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>1st Mosque Signed</strong></td>
-              <td>Welcome Bonus</td>
-              <td>One-time bonus upon successful onboarding of your first partner mosque.</td>
-            </tr>
-            <tr>
-              <td><strong>5th Mosque Signed</strong></td>
-              <td>Achievement Bonus</td>
-              <td>Additional bonus when you reach five active partner mosques in your region.</td>
-            </tr>
-            <tr>
-              <td><strong>Monthly Contribution</strong></td>
-              <td>Stipend</td>
-              <td>Monthly contribution based on active mosques under your care and engagement metrics.</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="content-block" style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p style="font-size: 2.5rem; color: var(--accent-gold); font-weight: 700; margin-bottom: 0.5rem;" data-i18n="rep.comp.rate">২০%</p>
+        <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 1.5rem;" data-i18n="rep.comp.rateDesc">আপনার অংশীদারি মসজিদের মাধ্যমে সংগৃহীত দানের কমিশন</p>
+        <p style="color: var(--text-light);" data-i18n="rep.comp.detail">নূরআস্ক একটি জনকল্যাণমূলক প্রকল্প। আপনার আনা অংশীদারি মসজিদগুলো যদি দান সংগ্রহে সাহায্য করে, তবে আপনার প্রচেষ্টার জন্য দানের ২০% আপনাকে কমিশন হিসেবে প্রদান করা হবে। দান না এলে কমিশন নেই — কোনো চাপ নেই, কেবল সম্প্রদায়ের প্রতি সৎ সেবা।</p>
       </div>
     </div>
   </section>
@@ -120,15 +106,11 @@
   <!-- CTA -->
   <section class="section bg-cream">
     <div class="container" style="text-align: center;">
-      <h2 class="section-title">Become a Representative</h2>
-      <p class="section-subtitle">Join us in building the future of mosque-community connection</p>
-      <button class="btn btn-primary" id="repBtn" style="margin-bottom: 1.5rem;">Become a Representative</button>
-      <div id="repFormArea" style="display: none;">
-        <div class="typeform-placeholder">
-          <i class="fas fa-clipboard-list"></i>
-          <p>Please fill out our representative application form</p>
-          <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">(Typeform embed will be placed here)</p>
-        </div>
+      <h2 class="section-title" data-i18n="rep.cta.title">প্রতিনিধি হোন</h2>
+      <p class="section-subtitle" data-i18n="rep.cta.subtitle">মসজিদগুলোকে নূরআস্কের সাথে যুক্ত করতে সাহায্য করুন। এটি একটি জনকল্যাণমূলক প্রকল্প — দান এলে আপনি ২০% পান।</p>
+      <p style="margin-top: 1.5rem; color: var(--text-light);" data-i18n="rep.cta.placeholder">প্রতিনিধি আবেদন ফর্ম শীঘ্রই এখানে আসবে। এখন যোগাযোগ পৃষ্ঠায় যান।</p>
+      <div style="margin-top: 1.5rem;">
+        <a href="./contact.html" class="btn btn-primary" data-i18n="partner.apply.contactInstead">যোগাযোগ পৃষ্ঠায় যান</a>
       </div>
     </div>
   </section>
@@ -139,7 +121,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -147,39 +129,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
-  <script>
-    document.getElementById('repBtn').addEventListener('click', function() {
-      var area = document.getElementById('repFormArea');
-      area.style.display = area.style.display === 'none' ? 'block' : 'none';
-      this.textContent = area.style.display === 'none' ? 'Become a Representative' : 'Hide Form';
-    });
-  </script>
 </body>
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bn" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About NoorAsk - A public-interest Islamic digital education platform initiated by Jovi & Josh Waresoft Studio.">
-  <title>About Us - NoorAsk</title>
+  <meta name="description" content="নূরআস্ক সম্পর্কে — মসজিদ ও মুসল্লিদের মাঝে সেতুবন্ধন তৈরি করে এমন একটি মোবাইল অ্যাপ। আপনার মসজিদের সাথে অংশীদারি করে জীবন বদলানো পথনির্দেশনা দিন।">
+  <title>নূরআস্ক সম্পর্কে</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,13 +23,19 @@
         <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html" class="active">About</a></li>
-        <li><a href="./partnership.html">Partnership</a></li>
-        <li><a href="./representatives.html">Representatives</a></li>
-        <li><a href="./transparency.html">Transparency</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+        <li class="active"><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+        <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+        <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+        <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+        <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+        <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="bn" data-i18n="lang.bn">বাংলা</button>
+            <button class="lang-btn" data-lang="en" data-i18n="lang.en">English</button>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,8 +43,9 @@
   <!-- About Hero -->
   <section class="hero" style="padding-top: 7rem; padding-bottom: 3rem;">
     <div class="container">
-      <h1>About NoorAsk</h1>
-      <p class="tagline">A public-interest Islamic digital education platform serving the global Muslim community</p>
+      <h1 data-i18n="about.title">নূরআস্ক সম্পর্কে</h1>
+      <p class="tagline" data-i18n="about.hero.tagline">যে প্রশ্নগুলো মুখে বলা কঠিন — এখন নির্ভয়ে জিজ্ঞাসা করুন</p>
+      <p style="font-size: 1.05rem; color: var(--accent-gold); font-weight: 500; margin-top: 1rem;" data-i18n="about.hero.sub">সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে — আপনার ইমামের পথনির্দেশনা, সর্বদা আপনার কাছে।</p>
     </div>
   </section>
 
@@ -43,10 +53,14 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="content-block">
-        <h2 class="section-title" style="text-align: left;">Our Mission</h2>
-        <p>NoorAsk is a public-interest Islamic digital education platform initiated by <strong>Jovi & Josh Waresoft Studio</strong>. We believe that every Muslim deserves easy access to reliable religious guidance, and that local mosques should be empowered to serve their communities through modern technology.</p>
-        <p>We are launching first in <strong>Bangladesh</strong>, using location-based services (LBS) to connect worshippers with their local mosques. By bridging the gap between traditional Islamic scholarship and contemporary digital tools, NoorAsk creates a trusted space for seeking knowledge.</p>
-        <p>Our platform is built on the principles of <strong>accessibility, authenticity, and community</strong>. We partner directly with mosques and qualified imams to ensure that every answer is grounded in sound Islamic knowledge and local understanding.</p>
+        <h2 class="section-title" style="text-align: left;" data-i18n="about.mission.title">আমাদের মিশন</h2>
+        <p data-i18n="about.mission.p1">নূরআস্ক একটি মোবাইল অ্যাপ — মসজিদ ও মুসল্লিদের মাঝে এক সেতুবন্ধন। এটি গড়ে তুলেছে Jovi & Josh Waresoft Studio। আমরা বিশ্বাস করি, প্রতিটি মুসলিমের এমন এক নিরাপদ স্থান পাওয়ার অধিকার আছে যেখানে তিনি নির্ভয়ে (নামে বা নাম ছাড়া) জীবনের কঠিন প্রশ্নগুলো জিজ্ঞাসা করতে পারেন — এবং বিশ্বস্ত ইমামের কাছ থেকে উত্তর পেতে পারেন।</p>
+        <p data-i18n="about.mission.p2">অনেক সংগ্রাম অপ্রকাশিত থেকে যায়। বৈবাহিক সমস্যা, আর্থিক সংশয়, রূহানি বিভ্রান্তি — মানুষ নীরবে কষ্ট ভোগ করে, কারণ বিচারের ভয় ছাড়া কাউকে জিজ্ঞাসা করার মতো জানে না। নূরআস্ক সেই বাধা ভেঙে দেয়। এক ট্যাপে যে কেউ নির্ভয়ে প্রশ্ন করতে পারেন এবং সহানুভূতিশীল, জ্ঞানভিত্তিক পথনির্দেশনা পেতে পারেন।</p>
+        <p data-i18n="about.mission.p3">আমরা প্রথমে বাংলাদেশে চালু করছি, মসজিদের সাথে অংশীদারি করে এমন এক নেটওয়ার্ক গড়ছি যেখানে ইমামগণ তাঁদের সম্প্রদায়ের সেবায় প্রস্তুত। অ্যাপটি মসজিদের সাথে একত্রে গড়ে ওঠে — শুরুতে ইমামদের সাথে মিলে ৪০০+ পূর্বপ্রস্তুত প্রশ্নোত্তর তৈরি করা হয়, যা প্রতিটি নতুন উত্তরে বাড়তে থাকে। মিল পাওয়া গেলে উত্তর সরাসরি পৌঁছায়, না হলে নিকটস্থ অংশীদারি মসজিদের ইমামের কাছে যায়। ব্যবহারকারী চাইলে নির্দিষ্ট ইমামকেও বেছে নিতে পারেন।</p>
+        <div class="highlight-box">
+          <i class="fas fa-handshake" style="color: var(--accent-gold); margin-bottom: 0.5rem; font-size: 1.3rem;"></i>
+          <p style="font-weight: 600; color: var(--primary-green); margin: 0;" data-i18n="about.mission.p4">আমাদের প্ল্যাটফর্ম গড়ে ওঠে সহজলভ্যতা, গোপনীয়তা ও সম্প্রদায়ের নীতিতে। প্রতিটি প্রশ্ন নাম ছাড়াও করা যায় (নামে বা নাম ছাড়া)। প্রতিটি উত্তর প্রামাণিক ইসলামিক জ্ঞানের ওপর প্রতিষ্ঠিত। প্রতিটি অংশীদারি মসজিদ তাঁদের পৌঁছানোর পরিধি দেয়ালের বাইরে পর্যন্ত বিস্তার করে।</p>
+        </div>
       </div>
     </div>
   </section>
@@ -55,16 +69,16 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Core Features</h2>
-        <p class="section-subtitle">Designed to strengthen the bond between mosques and their communities</p>
+        <h2 class="section-title" data-i18n="about.features.title">অংশীদারি মসজিদ যা পায়</h2>
+        <p class="section-subtitle" data-i18n="about.features.subtitle">আপনার সম্প্রদায়ের সাথে সংযোগ বাড়াতে ফ্রি টুল</p>
       </div>
       <div class="content-block">
         <ul class="feature-list">
-          <li><strong>LBS + Mosque Homepage:</strong> Find nearby mosques and explore their profiles, prayer times, events, and announcements.</li>
-          <li><strong>Smart Q&A Matching (Unlimited):</strong> Ask any question and receive instant, AI-matched answers from verified Islamic sources — with no usage limits.</li>
-          <li><strong>Imam Q&A:</strong> Submit questions directly to your local imam for personalized, authoritative guidance.</li>
-          <li><strong>Anonymous or Named Questions:</strong> Choose whether to ask publicly, anonymously, or with your name — full flexibility and privacy.</li>
-          <li><strong>Daily Verse Push:</strong> Receive a daily Quranic verse with reflection to keep your heart connected to the Book of Allah.</li>
+          <li data-i18n="about.features.f1">ডিজিটাল মসজিদ প্রোফাইল: আপনার মসজিদের জন্য একটি বিশেষ পৃষ্ঠা — নামাজের সময়, ইভেন্ট, ঘোষণা ও ইমাম পরিচিতি সহ। নিকটস্থ প্রতিটি অ্যাপ ব্যবহারকারীর কাছে দৃশ্যমান।</li>
+          <li data-i18n="about.features.f2">ইমাম প্রশ্নোত্তর চ্যানেল: আপনার ইমাম প্ল্যাটফর্মের মাধ্যমে সরাসরি সম্প্রদায়ের প্রশ্নের উত্তর দিতে পারেন — যেকোনো সময়, যেকোনো জায়গা থেকে।</li>
+          <li data-i18n="about.features.f3">সম্প্রদায় ড্যাশবোর্ড: দেখুন কতজন আপনার মসজিদের সাথে যুক্ত, কী প্রশ্ন করছেন, এবং আপনার সম্প্রদায় কীভাবে বাড়ছে।</li>
+          <li data-i18n="about.features.f4">খুতবা ও ঘোষণা সম্প্রচার: জুমার খুতবা, ইভেন্ট বিজ্ঞপ্তি ও ধর্মীয় অনুস্মারক সরাসরি আপনার সম্প্রদায়ের কাছে পৌঁছে দিন।</li>
+          <li data-i18n="about.features.f5">স্বচ্ছ তহবিল সংগ্রহ (ঐচ্ছিক): সমর্থকদের কাছ থেকে স্বেচ্ছায় দান গ্রহণ করুন — সম্পূর্ণ স্বচ্ছতায়, প্রতিটি টাকা হিসাবভুক্ত।</li>
         </ul>
       </div>
     </div>
@@ -74,41 +88,41 @@
   <section class="section bg-cream">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Our Team</h2>
-        <p class="section-subtitle">Dedicated professionals serving the ummah</p>
+        <h2 class="section-title" data-i18n="about.team.title">আমাদের টিম</h2>
+        <p class="section-subtitle" data-i18n="about.team.subtitle">উম্মাহর সেবায় নিয়োজিত একনিষ্ঠ পেশাদার</p>
       </div>
       <div class="team-grid">
         <div class="card team-card">
           <div class="team-avatar">
             <i class="fas fa-user"></i>
           </div>
-          <h4>Jovi Lee</h4>
-          <span class="team-role">Product Manager</span>
-          <p>Senior product manager who previously led million-user education products.</p>
+          <h4>Jovi</h4>
+          <span class="team-role" data-i18n="about.team.jovi.role">প্রোডাক্ট ম্যানেজার</span>
+          <p data-i18n="about.team.jovi.bio">সাবেক সিনিয়র প্রোডাক্ট ম্যানেজার; লক্ষাধিক ব্যবহারকারীর শিক্ষা প্রোডাক্ট পরিচালনার অভিজ্ঞতা।</p>
         </div>
         <div class="card team-card">
           <div class="team-avatar">
             <i class="fas fa-user"></i>
           </div>
-          <h4>Josh Chung</h4>
-          <span class="team-role">Backend Developer</span>
-          <p>Expert in API design and AI integration, specializing in RAG systems.</p>
+          <h4>Josh</h4>
+          <span class="team-role" data-i18n="about.team.josh.role">ব্যাকএন্ড ডেভেলপার</span>
+          <p data-i18n="about.team.josh.bio">API ডিজাইন ও AI ইন্টিগ্রেশনে বিশেষজ্ঞ; RAG সিস্টেমে দক্ষ।</p>
         </div>
         <div class="card team-card">
           <div class="team-avatar">
             <i class="fas fa-user"></i>
           </div>
-          <h4>Ciki Tseng</h4>
-          <span class="team-role">Frontend Developer</span>
-          <p>Proficient in Flutter and web development, crafting beautiful user experiences.</p>
+          <h4>Ciki</h4>
+          <span class="team-role" data-i18n="about.team.ciki.role">ফ্রন্টএন্ড ডেভেলপার</span>
+          <p data-i18n="about.team.ciki.bio">Flutter ও ওয়েব ডেভেলপমেন্টে অভিজ্ঞ; সুন্দর ব্যবহারকারী অভিজ্ঞতা তৈরিতে দক্ষ।</p>
         </div>
         <div class="card team-card">
           <div class="team-avatar">
             <i class="fas fa-user"></i>
           </div>
-          <h4>Samu Tasfin</h4>
-          <span class="team-role">Bangladesh Liaison Representative</span>
-          <p>Our first local representative, building bridges with mosques across Bangladesh.</p>
+          <h4>Samu</h4>
+          <span class="team-role" data-i18n="about.team.samu.role">বাংলাদেশ সংযোগ প্রতিনিধি</span>
+          <p data-i18n="about.team.samu.bio">আমাদের প্রথম স্থানীয় প্রতিনিধি; বাংলাদেশের বিভিন্ন মসজিদের সাথে সেতুবন্ধন গড়ছেন।</p>
         </div>
       </div>
     </div>
@@ -120,7 +134,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">NoorAsk</div>
-          <p style="font-size: 0.9rem; line-height: 1.6;">Mosque-Driven Muslim Life Guidance Platform. Serving the ummah with technology and trust.</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.tagline">নূরআস্ক — যেকোনো সময়, যেকোনো জায়গায় ইমামের কাছে নির্ভয়ে প্রশ্ন করুন। সত্যের আলো পৌঁছে যাক প্রতিটি লুকানো সংগ্রামে।</p>
           <div class="footer-social">
             <a href="https://t.me/nooraskbangladesh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="https://facebook.com/nooraskbangladesh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -128,32 +142,33 @@
           </div>
         </div>
         <div class="footer-section">
-          <h4>Sitemap</h4>
+          <h4 data-i18n="footer.sitemap">সাইটম্যাপ</h4>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./partnership.html">Partnership</a></li>
-            <li><a href="./representatives.html">Representatives</a></li>
-            <li><a href="./transparency.html">Transparency</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">হোম</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">পরিচিতি</a></li>
+            <li><a href="./partnership.html" data-i18n="nav.partnership">অংশীদারিত্ব</a></li>
+            <li><a href="./representatives.html" data-i18n="nav.representatives">প্রতিনিধি</a></li>
+            <li><a href="./transparency.html" data-i18n="nav.transparency">স্বচ্ছতা</a></li>
+            <li><a href="./faq.html" data-i18n="nav.faq">সাধারণ প্রশ্ন</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">যোগাযোগ</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Legal</h4>
+          <h4 data-i18n="footer.legal">আইনি</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+            <li><a href="#" data-i18n="footer.terms">ব্যবহারের শর্তাবলী</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 NoorAsk. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© ২০২৬ নূরআস্ক। সর্বস্বত্ব সংরক্ষিত।</p>
         <p class="arabic-text">أسئلة النور (As'ilah An-Nur)</p>
       </div>
     </div>
   </footer>
 
+  <script src="./js/i18n.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

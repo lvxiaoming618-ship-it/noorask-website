@@ -906,3 +906,114 @@ tbody tr:hover {
   flex-direction: row-reverse;
   text-align: right;
 }
+
+/* ============ Language Switcher ============ */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--light-green);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem;
+  gap: 0.15rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-medium);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  font-family: inherit;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--primary-green);
+}
+
+.lang-btn.active {
+  background-color: var(--bg-white);
+  color: var(--primary-green);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (max-width: 991px) {
+  .nav-lang {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+}
+
+/* ============ Free Badge ============ */
+.free-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--accent-gold);
+  color: var(--bg-white);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(201,168,76,0.35);
+  margin-bottom: 1rem;
+}
+
+.free-badge i {
+  font-size: 0.85rem;
+}
+
+/* Bengali Typography */
+[lang="bn"] body {
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[lang="bn"] h1,
+[lang="bn"] h2,
+[lang="bn"] h3,
+[lang="bn"] h4,
+[lang="bn"] h5,
+[lang="bn"] h6,
+[lang="bn"] .logo,
+[lang="bn"] .footer-brand,
+[lang="bn"] .section-title,
+[lang="bn"] .hero .tagline,
+[lang="bn"] .stat-item .stat-number,
+[lang="bn"] .team-role,
+[lang="bn"] .btn {
+  font-family: "Noto Serif Bengali", "Hind Siliguri", Georgia, serif;
+}
+
+/* Arabic Brand Mark */
+.arabic-text {
+  direction: rtl;
+}
+
+/* Co-Creation Highlight Box */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(13,92,59,0.06) 0%, rgba(201,168,76,0.08) 100%);
+  border-left: 4px solid var(--accent-gold);
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius-sm);
+  margin: 1.5rem 0;
+}
+
+.highlight-box p {
+  margin-bottom: 0;
+  color: var(--text-dark);
+  font-weight: 500;
+}
